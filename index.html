@@ -70,8 +70,8 @@
         .yellow-text {
             color: yellow;
         }
-	     .#FF6933-text {
-            color: #FF6933;
+	     .orange-text {
+            color: orange;
         }
     </style>
 </head>
@@ -99,7 +99,7 @@
         <option value="">Select Work Type</option>
     </select>
 
-    <h3><span class="yellow-text">Proposed Status</span></h3>
+    <h3><span class="yellow-text">6. Proposed Status</span></h3>
     <select id="proposedStatusSelect" onchange="showData()">
         <option value="">Select Proposed Status</option>
     </select>
@@ -172,12 +172,12 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The Following</span> <span class="#FF6933-text">are to be selected for</span> <span class="yellow-text">the Proposed Status above</span> <span class="#FF6933-text">in order to create a New Work in NREGASoft:</span>`;
-        document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
-        document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
-        document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
-        document.getElementById('typeOfActivity').innerHTML = `TYPE OF ACTIVITY: <span class="yellow-text">${selectedData.typeOfActivity}</span>`;
-        document.getElementById('workType').innerHTML = `WORK TYPE: <span class="yellow-text">${selectedData.workType}</span>`;
+        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The Following</span> <span class="orange-text">are to be selected for</span> <span class="yellow-text">the Proposed Status above</span> <span class="orange-text">in order to create a New Work in NREGASoft:</span>`;
+        document.getElementById('majorWorkCategory').innerHTML = `1. Major Work Category : <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
+        document.getElementById('majorHeads').innerHTML = `2. Major Heads (Schedule of Act) : <span class="yellow-text">${selectedData.majorHeads}</span>`;
+        document.getElementById('typeOfBeneficiary').innerHTML = `3. Type of Beneficiary: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
+        document.getElementById('typeOfActivity').innerHTML = `4. Type of Activity : <span class="yellow-text">${selectedData.typeOfActivity}</span>`;
+        document.getElementById('workType').innerHTML = `5. Work Type : <span class="yellow-text">${selectedData.workType}</span>`;
         document.getElementById('dataDisplay').style.display = 'block';
     } else {
         hideDataDisplay();
