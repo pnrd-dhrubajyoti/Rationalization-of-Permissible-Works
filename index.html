@@ -70,8 +70,8 @@
         .yellow-text {
             color: yellow;
         }
-	     .#FF6933-text {
-            color: #FF6933-text;
+	     .blue-text {
+            color: blue;
         }
     </style>
 </head>
@@ -172,7 +172,7 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The FOLLOWING</span> are to be selected for <span class="yellow-text">the Proposed Status above</span> in order to create a New Work in NREGASoft:`;
+        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The Following</span> <span class="blue-text">are to be selected for</span> <span class="yellow-text">the Proposed Status above</span> <span class="blue-text">in order to create a New Work in NREGASoft:</span>`;
         document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
         document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
         document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
