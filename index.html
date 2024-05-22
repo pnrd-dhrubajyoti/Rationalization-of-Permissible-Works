@@ -99,7 +99,7 @@
         <option value="">Select Work Type</option>
     </select>
 
-    <h3>Proposed Status</h3>
+    <h3><span class="yellow-text">Proposed Status</span></h3>
     <select id="proposedStatusSelect" onchange="showData()">
         <option value="">Select Proposed Status</option>
     </select>
@@ -172,7 +172,7 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The FOLLOWING</span> are to be selected for the PROPOSED STATUS above in order to create a New Work in NREGASoft:`;
+        document.getElementById('workCategory').innerHTML = `*<span class="yellow-text">The FOLLOWING</span> are to be selected for <span class="yellow-text">the Proposed Status above</span> in order to create a New Work in NREGASoft:`;
         document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
         document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
         document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
