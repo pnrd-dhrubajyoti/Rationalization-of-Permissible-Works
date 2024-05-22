@@ -169,7 +169,7 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `MIS Head`;
+        document.getElementById('workCategory').innerHTML = `The following are to be selected for the above proposed status to create a New Work in NREGASoft :`;
         document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
         document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
         document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
