@@ -169,7 +169,7 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `WORK CATEGORY [As per AMC 2022-23]: <span class="yellow-text">${selectedData.workCategory}</span>`;
+        document.getElementById('workCategory').innerHTML = `MIS Head **<span class="yellow-text">${selectedData.workCategory}</span>`;**
         document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
         document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
         document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
