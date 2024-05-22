@@ -172,7 +172,7 @@
     const selectedStatus = proposedStatusSelect.value;
     const selectedData = data.find(item => item.proposedStatus === selectedStatus);
     if (selectedData) {
-        document.getElementById('workCategory').innerHTML = `<span class="#FF6933-text">THE FOLLOWING ARE TO BE SELECTED FOR THE PROPOSED STATUS ABOVE IN ORDER TO CREATE A NEW WORK IN NREGASoft:</span>`;
+        document.getElementById('workCategory').innerHTML = `<span class="yellow-text">THE FOLLOWING</span> ARE TO BE SELECTED FOR THE PROPOSED STATUS ABOVE IN ORDER TO CREATE A NEW WORK IN NREGASoft:`;
         document.getElementById('majorWorkCategory').innerHTML = `MAJOR WORK CATEGORY: <span class="yellow-text">${selectedData.majorWorkCategory}</span>`;
         document.getElementById('majorHeads').innerHTML = `MAJOR HEADS: <span class="yellow-text">${selectedData.majorHeads}</span>`;
         document.getElementById('typeOfBeneficiary').innerHTML = `TYPE OF BENEFICIARY: <span class="yellow-text">${selectedData.typeOfBeneficiary}</span>`;
